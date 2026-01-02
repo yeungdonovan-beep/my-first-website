@@ -1,0 +1,41 @@
+body {
+  background-color: #f4f4f9; /* Soft Grey */
+  color: #333333;            /* Dark Grey Text */
+  font-family: Arial, sans-serif; /* Clean font */
+}
+h1 {
+  color: #2c3e50; /* A professional navy blue */
+}
+.profile-pic {
+  width: 150px;       /* Force the size */
+  border-radius: 50%; /* Make it a circle! */
+}
+main {
+  background-color: #ffffff; /* White paper */
+  width: 600px;              /* Fixed width */
+  border: 2px solid black;   /* The Frame (Border) */
+  padding: 20px;             /* The Matting (Space INSIDE) */
+  margin: 50px auto;         /* The Wall Space (Space OUTSIDE) */
+}
+header {
+  display: flex;             /* Activate Yoga Mode */
+  flex-direction: column;    /* Stack them vertically */
+  align-items: center;       /* Center them horizontally */
+  margin-bottom: 40px;       /* Push the Main section down */
+  text-align: center;        /* Center the text inside the tags */
+}
+
+/* If screen is smaller than 600px (like a phone) */
+@media (max-width: 600px) {
+  
+  /* Change the Main box rules */
+  main {
+    width: 90%;       /* Instead of fixed pixels, take up 90% of the screen */
+    margin: 20px auto; /* Less margin on top */
+  }
+
+  /* Make the header text smaller so it fits */
+  h1 {
+    font-size: 24px;
+  }
+}
